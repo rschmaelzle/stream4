@@ -41,7 +41,7 @@ STARTERS = {
 
 @st.cache(allow_output_mutation=True, suppress_st_warning=True)
 def load_model() -> TextGenerationPipeline:
-    return pipeline("text-generation", model="e-tony/gpt2-rnm")
+    return pipeline("text-generation", model="huggingtweets/ica_csab")
 
 
 def filter_bad_words(text: str) -> str:
